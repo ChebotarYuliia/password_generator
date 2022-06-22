@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="password-generator">
+            <h2 class="password-generator__main-title">Password Generator</h2>
+            <p class="password-generator__title">Your password:</p>
+            <div class="password-generator__result">
+                <input value="" class="password-generator__viewbox" readonly />
+                <div class="password-generator__copy" data-action="copy" hidden></div>
+            </div>
+            <div class="password-generator__settings">
+                <p class="password-generator__title">settings</p>
+                <label class="password-generator__setting">
+                    <input type="checkbox" data-action="checkbox" data-setting="uppercase" />
+                    Include uppercase
+                </label>
+                <label class="password-generator__setting">
+                    <input type="checkbox" data-action="checkbox" data-setting="lowercase" checked />
+                    Include lowercase
+                </label>
+                <label class="password-generator__setting">
+                    <input type="checkbox" data-action="checkbox" data-setting="numbers" checked />
+                    Include numbers
+                </label>
+                <label class="password-generator__setting">
+                    <input type="checkbox" data-action="checkbox" data-setting="symbols" />
+                    Include symbols
+                </label>
+                <p class="password-generator__title password-generator__title-length" data-length='8'>length:</p>
+                <div class="password-generator__range" data-min="4" data-max="22">
+                    <input class="password-generator__slider" type="range" min="4" max="22" value="8"
+                        data-action="slider" />
+                </div>
+            </div>
+            <button class="password-generator__btn" data-action="generate">generate password</button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
