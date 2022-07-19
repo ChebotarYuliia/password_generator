@@ -14,7 +14,7 @@ const selectors = {
 const flags = {
     lowercase: true,
     uppercase: false,
-    numbers: false,
+    numbers: true,
     symbols: false,
     length: 8,
 };
